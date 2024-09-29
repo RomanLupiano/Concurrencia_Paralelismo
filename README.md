@@ -1,0 +1,1 @@
+# Notas sobre concurrencia y paralelismo
