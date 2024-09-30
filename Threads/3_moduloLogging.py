@@ -12,10 +12,9 @@ Debug (10)
 Por defecto solo se ven los mensajes de prioridad >= 30, para eso se configura el basicConfig
 '''
 
-
 logging.basicConfig(
     level=logging.DEBUG,#Recibe integers logging.DEBUG es una constante que vale 10
-    format='%(message)s - %(processName)s - %(filename)s - %(asctime)s - %(funcName)s - %(levelname)s - %(lineno)s', #Se puede agregar información a los mensajes modificando el format
+    format='%(message)s - %(processName)s - %(filename)s - %(asctime)s - %(funcName)s - %(levelname)s - %(lineno)s - %(thread)s - %(threadName)s', #Se puede agregar información a los mensajes modificando el format
     #filename='messages.txt' #Los mensajes se almacenarán en el archivo especificado
 )
 
